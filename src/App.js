@@ -71,7 +71,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <h1>Conway's Game of Life</h1>
+        <h1>
+          <a
+            href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Conway's Game of Life
+          </a>
+        </h1>
         <table className="board">
           <tbody>
             {this.state.game.board.map((row, rowIndex) => (
@@ -103,7 +111,15 @@ class App extends React.Component {
           </button>
         </div>
         <footer>
-          <p>Made by Edward Lu</p>
+          <p>
+            <a
+              href="https://github.com/ejlu/conways-game-of-life"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Made by Edward Lu
+            </a>
+          </p>
         </footer>
       </div>
     )
