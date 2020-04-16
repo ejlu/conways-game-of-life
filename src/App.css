@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  border-collapse: collapse;
+}
+
+.board td {
+  border: 1px solid #ddd;
+  width: 18px;
+  height: 18px;
+}
+
+td.alive {
+  background-color: #8cc8dd;
+}
+
+.controls {
+  margin: 10px 0 50px 0;
+}
+
+.button {
+  padding: 0.85em 1em;
+  margin: 5px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 0.9em;
+  text-align: center;
+  background-color: #2ba6cb;
+  color: #fefefe;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #258dad;
+}
+
+.button:focus {
+  outline: dashed 1px #2ba6cb;
+}
